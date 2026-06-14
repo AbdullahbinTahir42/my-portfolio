@@ -2,12 +2,12 @@ import { Code, Terminal, Cpu, Database, Layout, Server, Brain, Gamepad2, Shoppin
 
 export const personalDetails = {
   name: "Abdullah Tahir",
-  role: "Backend Developer & AI Engineer",
+  role: "AI Engineer",
   email: "abdullahtahir4200@gmail.com",
   phone: "+923045972323",
-  linkedin: "https://www.linkedin.com/in/abdullah-tahir-23ntucs1004/",
+  linkedin: "https://www.linkedin.com/in/abdullahbintahirsuleman/",
   github: "https://github.com/AbdullahbinTahir42",
-  about: "Backend Developer with deep expertise in Python and Django, now pivoting into AI and Machine Learning. I specialize in building the robust, scalable infrastructure needed to deploy and serve ML models."
+  about: "Dynamic AI Developer dedicated to building autonomous systems and scalable, intelligent applications that solve complex real-world problems. Experienced in architecting autonomous workflows (LangChain, CrewAI), designing custom Retrieval-Augmented Generation (RAG) pipelines, and deploying robust AI models as highly scalable APIs."
 };
 
 export const skills = [
@@ -16,23 +16,28 @@ export const skills = [
   { name: "Python", icon: Terminal },
   { name: "FastAPI", icon: Server },
   { name: "Django", icon: Database },
-  { name: "React", icon: Layout },
   { name: "SQL / PostgreSQL", icon: Database },
-  { name: "Game Dev", icon: Gamepad2 },
-];
+  { name: "Agentic AI", icon: Brain },
+  ];
 
 export const experience = [
-  {
-    role: "Freelance AI & Web Developer",
-    company: "Self-Employed",
-    date: "2023 – Present",
-    desc: "Created AI tools including Resume Analyzer, AI News Analysis Tool, and AI Portfolio Assistant. Designed CrewAI-based marketing automation systems."
+   {
+    role: "AI Engineering",
+    company: "Paklogics",
+    date: "Mar 2026 - Present",
+    desc: "Build and deploy production-ready AI solutions, specializing in architecting robust RAG pipelines and developing computer vision systems. Implement advanced AI-driven features to solve complex, real-world problems and elevate overall system capabilities. Also builing APIs using FastAPI to serve ML models and enable seamless integration with frontend applications."
   },
   {
-    role: "Django Backend Intern",
-    company: "NTU IT Lab",
-    date: "Jan 2024 – Mar 2024",
-    desc: "Developed RESTful APIs using Django and PostgreSQL for student management. Implemented user authentication and admin dashboards."
+    role: "ML Intern",
+    company: "Developer Hub Corporation",
+    date: "Jul 2025 - Sep 2025",
+    desc: "Engineered Scikit-learn predictive models on real-world datasets to optimize the end-to-end AI development lifecycle. Collaborated with technical teams on domain-specific tasks to accelerate machine learning integrations."
+  },
+  {
+    role: "Backend Developer Intern",
+    company: "DK Recruitment",
+    date: "Feb 2025 – Aug 2025",
+    desc: "Developed web-based applications and built scalable REST APIs utilizing Django and FastAPI."
   }
 ];
 
