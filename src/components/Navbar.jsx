@@ -28,8 +28,8 @@ const Navbar = () => {
         <div className="hidden md:flex gap-8 items-center text-gray-300 font-medium">
           <button onClick={() => handleScroll('home')} className="hover:text-brand transition">Home</button>
           <button onClick={() => handleScroll('skills')} className="hover:text-brand transition">Skills</button>
+          <button onClick={() => handleScroll('resume')} className="hover:text-brand transition">Resume</button>       
           <button onClick={() => handleScroll('projects')} className="hover:text-brand transition">Projects</button>
-          <button onClick={() => handleScroll('resume')} className="hover:text-brand transition">Resume</button>
           
           <Link to="/chat" className="flex items-center gap-2 bg-brand/10 text-brand px-5 py-2 rounded-full border border-brand hover:bg-brand hover:text-white transition-all">
             <MessageSquare size={18} />
