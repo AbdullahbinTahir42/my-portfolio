@@ -1,4 +1,5 @@
 import { experience, education, skills } from '../data';
+<<<<<<< HEAD
 import { Briefcase, GraduationCap, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -30,10 +31,28 @@ const Resume = () => {
               <skill.icon size={18} className="text-brand" />
               <span className="text-sm font-medium">{skill.name}</span>
             </motion.div>
+=======
+import { Briefcase, GraduationCap } from 'lucide-react';
+
+const Resume = () => {
+  return (
+    <section id="resume" className="py-24 px-6 max-w-7xl mx-auto">
+      
+      {/* Skills Section First */}
+      <div id="skills" className="mb-24">
+        <h2 className="text-3xl font-bold mb-10 text-center">Technical Skills</h2>
+        <div className="flex flex-wrap justify-center gap-4">
+          {skills.map((skill, idx) => (
+            <div key={idx} className="flex items-center gap-3 bg-[#2a2a2a] border border-gray-800 px-6 py-4 rounded-xl hover:border-brand hover:bg-brand/5 transition cursor-default">
+              <skill.icon size={24} className="text-brand" />
+              <span className="font-medium text-gray-200">{skill.name}</span>
+            </div>
+>>>>>>> 26e9d76daf4131e2ae49e5a5a247fc9975aec8c1
           ))}
         </div>
       </div>
 
+<<<<<<< HEAD
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="rounded-[28px] border border-white/10 bg-slate-900/40 p-8 shadow-[0_18px_60px_rgba(4,8,20,0.24)] backdrop-blur">
           <h3 className="mb-8 flex items-center gap-3 text-2xl font-semibold text-brand">
@@ -46,11 +65,29 @@ const Resume = () => {
                 <h4 className="text-xl font-semibold text-white">{job.role}</h4>
                 <p className="mt-1 text-sm font-medium text-brand">{job.company} • {job.date}</p>
                 <p className="mt-3 text-sm leading-7 text-slate-400">{job.desc}</p>
+=======
+      <div className="grid md:grid-cols-2 gap-12">
+        {/* Experience Column */}
+        <div>
+          <h3 className="flex items-center gap-3 text-2xl font-bold mb-8 text-brand">
+            <Briefcase /> Experience
+          </h3>
+          <div className="space-y-8 border-l-2 border-gray-800 pl-8 ml-3 relative">
+            {experience.map((job, idx) => (
+              <div key={idx} className="relative">
+                <div className="absolute -left-[41px] bg-[#222] p-2 rounded-full border-2 border-brand">
+                  <div className="w-2 h-2 bg-brand rounded-full"></div>
+                </div>
+                <h4 className="text-xl font-bold">{job.role}</h4>
+                <p className="text-brand text-sm mb-2">{job.company} | {job.date}</p>
+                <p className="text-gray-400 text-sm">{job.desc}</p>
+>>>>>>> 26e9d76daf4131e2ae49e5a5a247fc9975aec8c1
               </div>
             ))}
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="rounded-[28px] border border-white/10 bg-slate-900/40 p-8 shadow-[0_18px_60px_rgba(4,8,20,0.24)] backdrop-blur">
           <h3 className="mb-8 flex items-center gap-3 text-2xl font-semibold text-brand">
             <GraduationCap /> Education
@@ -62,6 +99,22 @@ const Resume = () => {
                 <h4 className="text-xl font-semibold text-white">{edu.degree}</h4>
                 <p className="mt-1 text-sm font-medium text-brand">{edu.school}</p>
                 <p className="mt-3 text-sm text-slate-400">{edu.date}</p>
+=======
+        {/* Education Column */}
+        <div>
+          <h3 className="flex items-center gap-3 text-2xl font-bold mb-8 text-brand">
+            <GraduationCap /> Education
+          </h3>
+          <div className="space-y-8 border-l-2 border-gray-800 pl-8 ml-3 relative">
+            {education.map((edu, idx) => (
+              <div key={idx} className="relative">
+                <div className="absolute -left-[41px] bg-[#222] p-2 rounded-full border-2 border-gray-600">
+                  <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+                </div>
+                <h4 className="text-xl font-bold">{edu.degree}</h4>
+                <p className="text-brand text-sm mb-2">{edu.school}</p>
+                <p className="text-gray-500 text-sm">{edu.date}</p>
+>>>>>>> 26e9d76daf4131e2ae49e5a5a247fc9975aec8c1
               </div>
             ))}
           </div>

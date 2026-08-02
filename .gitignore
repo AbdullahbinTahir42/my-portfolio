@@ -7,6 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+<<<<<<< HEAD
 # Dependencies
 node_modules/
 .pnpm-store/
@@ -33,6 +34,17 @@ node_modules/
 # Editor directories and files
 .vscode/
 .idea/
+=======
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+>>>>>>> 26e9d76daf4131e2ae49e5a5a247fc9975aec8c1
 .DS_Store
 *.suo
 *.ntvs*
