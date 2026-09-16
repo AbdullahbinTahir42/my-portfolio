@@ -138,7 +138,6 @@ export const projects = [
     category: 'React',
     desc: 'Designed a responsive React interface with Tailwind styling and authentication flows built for a smooth user journey.',
     github: 'https://github.com/AbdullahbinTahir42/frontend',
-    demo: 'https://hr.growvy.online/',
     tech: ['React', 'Tailwind', 'Auth']
   },
   {
