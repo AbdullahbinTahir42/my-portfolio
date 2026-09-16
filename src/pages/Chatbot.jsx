@@ -51,12 +51,13 @@ const Chatbot = () => {
   }, []);
 
   // --------------------------------------------------
-  // Auto scroll
+  // Auto scroll to latest message
   // --------------------------------------------------
 
   useEffect(() => {
     scrollRef.current?.scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
+      block: 'end'
     });
   }, [messages, loading]);
 
@@ -73,6 +74,7 @@ const Chatbot = () => {
       return;
     }
 
+    // Add user message immediately
     setMessages((prev) => [
       ...prev,
       {
@@ -87,7 +89,7 @@ const Chatbot = () => {
     try {
       let activeClient = client;
 
-      // Connect if not ready yet
+      // Connect if the client isn't ready yet
       if (!activeClient) {
         activeClient = await Client.connect(
           'abdullahtahir/My_Chatbot'
@@ -107,6 +109,7 @@ const Chatbot = () => {
         result?.data?.[0] ||
         "I couldn't generate a response.";
 
+      // Add bot response
       setMessages((prev) => [
         ...prev,
         {
@@ -116,7 +119,6 @@ const Chatbot = () => {
       ]);
 
     } catch (error) {
-
       console.error('Chatbot error:', error);
 
       setMessages((prev) => [
@@ -133,30 +135,28 @@ const Chatbot = () => {
   };
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-4xl flex-col px-4 pb-8 pt-24">
+    <div className="mx-auto flex h-screen max-w-4xl flex-col overflow-hidden px-4 pb-4 pt-24">
 
-      {/* Back */}
-
+      {/* Back to Portfolio */}
       <Link
         to="/"
-        className="mb-6 inline-flex items-center gap-2 text-sm text-slate-400 transition hover:text-brand"
+        className="mb-4 inline-flex flex-shrink-0 items-center gap-2 text-sm text-slate-400 transition hover:text-brand"
       >
         <ArrowLeft size={18} />
         Back to Portfolio
       </Link>
 
-
-      {/* Chat container */}
-
-      <div className="flex flex-1 flex-col overflow-hidden rounded-[28px] border border-white/10 bg-slate-900/60 shadow-[0_20px_60px_rgba(4,8,20,0.3)] backdrop-blur">
-
+      {/* Chat Container */}
+      <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-[28px] border border-white/10 bg-slate-900/60 shadow-[0_20px_60px_rgba(4,8,20,0.3)] backdrop-blur">
 
         {/* Header */}
-
-        <div className="flex items-center gap-4 border-b border-white/10 bg-slate-950/70 p-4">
+        <div className="flex flex-shrink-0 items-center gap-4 border-b border-white/10 bg-slate-950/70 p-4">
 
           <div className="rounded-full bg-brand/20 p-2">
-            <Bot size={22} className="text-brand" />
+            <Bot
+              size={22}
+              className="text-brand"
+            />
           </div>
 
           <div>
@@ -172,10 +172,8 @@ const Chatbot = () => {
 
         </div>
 
-
         {/* Messages */}
-
-        <div className="flex-1 space-y-6 overflow-y-auto p-5 sm:p-6">
+        <div className="min-h-0 flex-1 space-y-6 overflow-y-auto p-5 sm:p-6">
 
           {messages.map((msg, idx) => (
 
@@ -188,8 +186,7 @@ const Chatbot = () => {
               }`}
             >
 
-              {/* Bot avatar */}
-
+              {/* Bot Avatar */}
               {msg.role === 'bot' && (
                 <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-brand/20">
                   <Bot
@@ -199,9 +196,7 @@ const Chatbot = () => {
                 </div>
               )}
 
-
-              {/* Message */}
-
+              {/* Message Bubble */}
               <div
                 className={`max-w-[90%] rounded-2xl p-4 text-sm ${
                   msg.role === 'user'
@@ -297,9 +292,7 @@ const Chatbot = () => {
 
               </div>
 
-
-              {/* User avatar */}
-
+              {/* User Avatar */}
               {msg.role === 'user' && (
                 <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-brand/20">
                   <User
@@ -313,9 +306,7 @@ const Chatbot = () => {
 
           ))}
 
-
-          {/* Loading */}
-
+          {/* Loading Indicator */}
           {loading && (
 
             <div className="flex gap-3">
@@ -345,14 +336,13 @@ const Chatbot = () => {
 
           )}
 
+          {/* Scroll Anchor */}
           <div ref={scrollRef} />
 
         </div>
 
-
         {/* Input */}
-
-        <div className="border-t border-white/10 bg-slate-950/60 p-4">
+        <div className="flex-shrink-0 border-t border-white/10 bg-slate-950/60 p-4">
 
           <form
             onSubmit={handleSend}
