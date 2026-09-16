@@ -138,6 +138,7 @@ export const projects = [
     category: 'React',
     desc: 'Designed a responsive React interface with Tailwind styling and authentication flows built for a smooth user journey.',
     github: 'https://github.com/AbdullahbinTahir42/frontend',
+    demo: null,
     tech: ['React', 'Tailwind', 'Auth']
   },
   {
@@ -168,7 +169,7 @@ export const projects = [
     title: 'IoT Monitoring System',
     category: 'IoT / Full-Stack',
     desc: 'Built a hardware monitoring system connecting an ESP32 microcontroller to a FastAPI backend and Supabase database using MQTT.',
-    github: null,
+    github: 'https://github.com/AbdullahbinTahir42/IOT_Project',
     demo: null,
     tech: ['ESP32', 'MQTT', 'FastAPI']
   },
