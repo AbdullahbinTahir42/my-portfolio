@@ -7,16 +7,19 @@ export const personalDetails = {
   phone: '+923045972323',
   linkedin: 'https://www.linkedin.com/in/abdullahbintahirsuleman/',
   github: 'https://github.com/AbdullahbinTahir42',
+  portfolio: 'https://abdullahbintahir.vercel.app',
   about: 'I design and ship AI-powered products and reliable web experiences that turn complex ideas into practical, production-ready solutions. My work spans agentic systems, retrieval pipelines, APIs, and modern frontend interfaces built for real users.'
 };
 
 export const skills = [
   { name: 'Machine Learning', icon: Brain },
+  { name: 'Computer Vision', icon: Brain },
   { name: 'LangChain & CrewAI', icon: Cpu },
   { name: 'Python', icon: Terminal },
   { name: 'FastAPI', icon: Server },
   { name: 'Django', icon: Database },
   { name: 'SQL / PostgreSQL', icon: Database },
+  { name: 'React & Frontend', icon: Terminal },
   { name: 'Agentic AI', icon: Brain }
 ];
 
@@ -51,12 +54,52 @@ export const education = [
 
 export const projects = [
   {
+    title: 'Autonomous Voice AI Assistant',
+    category: 'AI Project',
+    desc: 'Engineered an autonomous voice AI assistant integrating local LLM inference, GPU-accelerated speech recognition (Whisper), neural TTS, and dynamic tools.',
+    github: 'https://github.com/AbdullahbinTahir42/AIVoiceAutomationAgent',
+    demo: null,
+    tech: ['LangGraph', 'FastAPI', 'Python']
+  },
+  {
     title: 'Autonomous AI Marketing Crew',
     category: 'AI Project',
     desc: 'Architected a multi-agent workflow that automates campaign planning, research, and execution steps with greater consistency and speed.',
     github: 'https://github.com/AbdullahbinTahir42/crew_ai/tree/master/markinting-crew',
     demo: null,
     tech: ['CrewAI', 'Python', 'AI Agents']
+  },
+  {
+    title: 'Breast Cancer Detection',
+    category: 'Computer Vision',
+    desc: 'Fine-tuned a ResNet50 model for mammogram-based breast cancer detection using the King Abdulaziz University dataset, achieving 84.5% accuracy.',
+    github: 'https://github.com/AbdullahbinTahir42/Mammographic_using_ResNet50',
+    demo: null,
+    tech: ['PyTorch', 'ResNet50', 'Computer Vision']
+  },
+  {
+    title: 'A/O Levels Exam Prep Platform',
+    category: 'AI / Backend',
+    desc: 'Built AI-powered APIs for structured exam-paper generation and automated evaluation; developed an OCR pipeline for mathematics papers.',
+    github: null,
+    demo: null,
+    tech: ['FastAPI', 'OCR', 'AI APIs']
+  },
+  {
+    title: 'Llama 3.1 Fine-Tuning',
+    category: 'AI / LLM',
+    desc: 'Fine-tuned a Llama 3.1 8B model using Unsloth for structured roadmap generation and published the model weights to Hugging Face.',
+    github: null,
+    demo: null,
+    tech: ['Unsloth', 'LLaMA', 'Hugging Face']
+  },
+  {
+    title: 'Prospect Automation',
+    category: 'Automation',
+    desc: 'Built an automation pipeline to identify target prospects and deliver personalized web pages at scale.',
+    github: null,
+    demo: null,
+    tech: ['Clay', 'n8n', 'Supabase']
   },
   {
     title: 'AI Portfolio Assistant',
@@ -77,10 +120,42 @@ export const projects = [
   {
     title: 'Resume Analyzer',
     category: 'AI Project',
-    desc: 'Developed an NLP-driven workflow to extract resume insights and support more structured hiring-fit analysis.',
+    desc: 'Developed an NLP-driven workflow utilizing a Decision Tree Classifier and Tokenization to extract resume insights and support more structured hiring-fit analysis.',
     github: 'https://github.com/AbdullahbinTahir42/3rd-Semester-project',
     demo: null,
     tech: ['NLP', 'Python', 'ML']
+  },
+  {
+    title: 'HR Job Portal API',
+    category: 'API / FastAPI',
+    desc: 'Implemented a FastAPI backend for a remote job portal with secure endpoints and AI-assisted resume parsing capabilities.',
+    github: 'https://github.com/AbdullahbinTahir42/remote_job',
+    demo: null,
+    tech: ['FastAPI', 'Gemini API', 'JWT']
+  },
+  {
+    title: 'HR Job Portal Frontend',
+    category: 'React',
+    desc: 'Designed a responsive React interface with Tailwind styling and authentication flows built for a smooth user journey.',
+    github: 'https://github.com/AbdullahbinTahir42/frontend',
+    demo: 'https://hr.growvy.online/',
+    tech: ['React', 'Tailwind', 'Auth']
+  },
+  {
+    title: 'E-commerce Store API',
+    category: 'API / FastAPI',
+    desc: 'Built a complete e-commerce backend with cart management, order handling, and reliable API structure for growth.',
+    github: 'https://github.com/AbdullahbinTahir42/loja_backend',
+    demo: null,
+    tech: ['FastAPI', 'PostgreSQL', 'Stripe']
+  },
+  {
+    title: 'E-commerce Store Frontend',
+    category: 'React',
+    desc: 'Created a modern storefront experience with React and Redux, combining strong UX details with production-ready UI structure.',
+    github: 'https://github.com/AbdullahbinTahir42/loja_frontend',
+    demo: null,
+    tech: ['React', 'Redux', 'Tailwind']
   },
   {
     title: 'Inventory Management System',
@@ -89,6 +164,14 @@ export const projects = [
     github: 'https://github.com/AbdullahbinTahir42/inventory_system_FastAPI',
     demo: null,
     tech: ['FastAPI', 'SQLAlchemy', 'SQLite']
+  },
+  {
+    title: 'IoT Monitoring System',
+    category: 'IoT / Full-Stack',
+    desc: 'Built a hardware monitoring system connecting an ESP32 microcontroller to a FastAPI backend and Supabase database using MQTT.',
+    github: null,
+    demo: null,
+    tech: ['ESP32', 'MQTT', 'FastAPI']
   },
   {
     title: 'Online Study App',
@@ -121,37 +204,5 @@ export const projects = [
     github: 'https://github.com/AbdullahbinTahir42/LearnPython',
     demo: null,
     tech: ['Python', 'Matplotlib', 'Pandas']
-  },
-  {
-    title: 'HR Job Portal API',
-    category: 'API / FastAPI',
-    desc: 'Implemented a FastAPI backend for a job portal with secure endpoints and AI-assisted resume parsing capabilities.',
-    github: 'https://github.com/AbdullahbinTahir42/remote_job',
-    demo: null,
-    tech: ['FastAPI', 'Gemini API', 'JWT']
-  },
-  {
-    title: 'HR Job Portal Frontend',
-    category: 'React',
-    desc: 'Designed a responsive React interface with Tailwind styling and authentication flows built for a smooth user journey.',
-    github: 'https://github.com/AbdullahbinTahir42/frontend',
-    demo: 'https://hr.growvy.online/',
-    tech: ['React', 'Tailwind', 'Auth']
-  },
-  {
-    title: 'E-commerce Store API',
-    category: 'API / FastAPI',
-    desc: 'Built a complete e-commerce backend with cart management, order handling, and reliable API structure for growth.',
-    github: 'https://github.com/AbdullahbinTahir42/loja_backend',
-    demo: null,
-    tech: ['FastAPI', 'PostgreSQL', 'Stripe']
-  },
-  {
-    title: 'E-commerce Store Frontend',
-    category: 'React',
-    desc: 'Created a modern storefront experience with React and Redux, combining strong UX details with production-ready UI structure.',
-    github: 'https://github.com/AbdullahbinTahir42/loja_frontend',
-    demo: null,
-    tech: ['React', 'Redux', 'Tailwind']
   }
 ];
