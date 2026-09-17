@@ -94,13 +94,14 @@ const Chatbot = () => {
       }
 
       // 2. Call the '/chat' endpoint and pass the [message, history] array
-      const result = await activeClient.predict(
-        '/chat',
-        [
-          userMsg,
-          history
-        ]
-      );
+      // Inside handleSend, change the predict call to:
+const result = await activeClient.predict(
+  '/generate_answer',
+  [
+    userMsg,
+    history
+  ]
+);
 
       const answer = result?.data?.[0] || "I couldn't generate a response.";
 
