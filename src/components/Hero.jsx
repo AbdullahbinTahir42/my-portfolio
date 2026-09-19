@@ -81,9 +81,6 @@ const Hero = () => {
                 <a href="/files/CV_Ai.pdf" download className="px-4 py-3 text-left text-sm text-slate-300 transition hover:bg-brand hover:text-white">
                   AI / ML Resume
                 </a>
-                <a href="/files/CV_python.pdf" download className="border-t border-white/10 px-4 py-3 text-left text-sm text-slate-300 transition hover:bg-brand hover:text-white">
-                  Backend Resume
-                </a>
               </div>
             )}
           </div>
