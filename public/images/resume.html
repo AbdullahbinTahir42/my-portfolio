@@ -1,0 +1,87 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="r-resume" class="r-resume-section">
+    <div class="r-header-container">
+        <h2 class="r-section-heading">My Resume</h2>
+    </div>
+    <div class="r-underline"></div>
+
+    <p class="r-section-subtitle">
+        AI Developer with a strong foundation in Machine Learning, LangChain, and CrewAI, specializing in building intelligent applications, RAG pipelines, and AI-driven tools. Also experienced in backend development with Django, FastAPI, and RESTful APIs.
+    </p>
+
+    <div class="r-resume-container">
+
+        <div class="r-experience">
+            <h3 class="r-section-subheading">Experience</h3>
+            <div class="r-experience-item">
+                <h4>Django Backend Intern</h4>
+                <p class="r-company-name">NTU IT Lab</p>
+                <p class="r-date-range">Jan 2024 – Mar 2024</p>
+                <p class="r-description">
+                    Developed RESTful APIs using Django and PostgreSQL for student management. Implemented user authentication, admin dashboards, and optimized backend performance.
+                </p>
+            </div>
+            <div class="r-experience-item">
+                <h4>Freelance AI & Web Developer</h4>
+                <p class="r-company-name">Self-Employed</p>
+                <p class="r-date-range">2023 – Present</p>
+                <p class="r-description">
+                    Created AI tools including Resume Analyzer, AI News Analysis Tool, and AI Portfolio Assistant. Designed CrewAI-based marketing automation systems and built scalable web applications with Django and FastAPI.
+                </p>
+            </div>
+        </div>
+
+        <div class="r-description">
+            <h3 class="r-section-subheading">Key Projects</h3>
+            <ul>
+                <li>AI News Analysis Tool – LangChain RAG pipeline with Gemini & FAISS for Q&A over web articles.</li>
+                <li>AI Portfolio Assistant – Personal chatbot trained on resume data, deployed on HuggingFace.</li>
+                <li>AI Marketing Content Engine – CrewAI-powered agent system automating SEO content creation.</li>
+                <li>Heart Disease Prediction – ML classification model using Scikit-learn with ROC/AUC evaluation.</li>
+                <li>Predictive Modeling for House & Stock Prices – Regression models with time-series analysis.</li>
+                <li>Inventory Management System – FastAPI & SQLite for product/stock management via REST APIs.</li>
+                <li>Remote Jobs Platform – Backend built with FastAPI for posting and finding remote jobs.</li>
+            </ul>
+        </div>
+
+        <div class="r-skills">
+            <h3 class="r-section-subheading">Skills</h3>
+            <div class="r-skills-list">
+                <div class="r-skill-item"><i class="fas fa-brain"></i><span>Machine Learning</span></div>
+                <div class="r-skill-item"><i class="fas fa-robot"></i><span>LangChain & CrewAI</span></div>
+                <div class="r-skill-item"><i class="fas fa-code"></i><span>Python</span></div>
+                <div class="r-skill-item"><i class="fas fa-fire"></i><span>FastAPI</span></div>
+                <div class="r-skill-item"><i class="fas fa-cogs"></i><span>Django</span></div>
+                <div class="r-skill-item"><i class="fas fa-database"></i><span>SQL, SQLite, PostgreSQL</span></div>
+                <div class="r-skill-item"><i class="fas fa-chart-line"></i><span>Pandas, NumPy, Scikit-learn</span></div>
+                <div class="r-skill-item"><i class="fas fa-network-wired"></i><span>RESTful APIs</span></div>
+                <div class="r-skill-item"><i class="fab fa-github"></i><span>Git & GitHub</span></div>
+                <div class="r-skill-item"><i class="fas fa-laptop-code"></i><span>HTML/CSS</span></div>
+            </div>
+        </div>
+
+        <div class="r-education">
+            <h3 class="r-section-subheading">Education</h3>
+            <div class="r-education-item">
+                <h4>Bachelor of Science in Artificial Intelligence</h4>
+                <p class="r-institution-name">National Textile University, Faisalabad</p>
+                <p class="r-graduation-year">Sep 2023 – Present</p>
+            </div>
+        </div>
+
+        <div class="r-certifications">
+            <h3 class="r-section-subheading">Certifications</h3>
+            <ul>
+                <li>Introduction to Python – Coursera</li>
+                <li>Django for Beginners – Udemy</li>
+                <li>CrewAi – CodeBasics</li>
+                <li>Langchain – CodeBasics</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
