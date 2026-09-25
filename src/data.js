@@ -37,7 +37,7 @@ export const experience = [
     desc: 'Developed and evaluated machine learning prototypes on real datasets, helping turn experimentation into more reliable, reusable implementation patterns.'
   },
   {
-    role: 'Backend Developer Intern',
+    role: 'Backend Developer',
     company: 'DK Recruitment',
     date: 'Feb 2025 – Aug 2025',
     desc: 'Delivered scalable backend solutions with Django and FastAPI, supporting clean APIs and efficient application integrations.'
